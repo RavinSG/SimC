@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 #include <process.h>
-#include "lcgrand.h"
+#include "../Utils/lcgrand.h"
 
-#define Q_LIMIT 100
+#define Q_LIMIT 1000
 #define BUSY 1
 #define IDLE 0
 
@@ -35,9 +35,9 @@ int main(int argc, char *argv[]) {
     // Read input parameters
 //    fscanf(infile, "%f %f %d", &mean_interarrival, &mean_service, &num_delays_required);
 
-    mean_interarrival = 0.8;
+    mean_interarrival = 0.505;
     mean_service = 0.5;
-    num_delays_required = 1000;
+    num_delays_required = 10000;
 
     // Write report heading and input parameters.
     fprintf(outfile, "Single server queuing system\n\n");
